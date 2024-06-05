@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Graham Williams Portfolio </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">GW </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">School</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="src/Mclaren.png" id="Mclaren">
+            <img src="src/racetrack.jpg" id="racetrack">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Hello</h2>
+            <p> My name is Graham Williams. I studied mechanical engineering at San Diego State Univerisity, 
+                I worked at Singer Vehicle Design and Crown poly before deciding to persue a Msc in Motorsport Engineering 
+                from Oxford Brookes. As you'll see in the projects section below, I'm particularly interested in vehicle preparation
+                for improved performance on track.
+                <br></br>
+
+                The website is in progress :)
+
+            </p>
+        </div>
+
+        <script>
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                Mclaren.style.left = (value-300) * -4 + 'px';
+                header.style.top = value * .75 + 'px';
+            })
+        </script>
+    </body>
+</html>
