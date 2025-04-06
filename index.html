@@ -3,106 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Mechanical Engineer</title>
+    <title>Trail Adventures - Hiking Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>John Doe</h1>
-            <p>Mechanical Engineer | Innovator | Problem Solver</p>
+            <h1>Trail Adventures</h1>
+            <p>Explore the best hiking trails, tips, and stories from the wilderness.</p>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home">
+    <section id="home" class="hero">
         <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>I’m a Mechanical Engineer with a passion for solving engineering challenges through innovation and design.</p>
-            <button onclick="location.href='#projects'">See My Projects</button>
-            <button onclick="location.href='#contact'">Contact Me</button>
+            <h2>Discover Nature's Wonders</h2>
+            <p>Join me as I explore breathtaking trails, share hiking tips, and tell stories from the great outdoors.</p>
+            <button onclick="location.href='#blog'">Read the Latest Blog Posts</button>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about-section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hi, I’m John Doe, a Mechanical Engineer with over 5 years of experience in product design, automation, and systems engineering.</p>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>SolidWorks, AutoCAD, Fusion 360</li>
-                <li>ANSYS, MATLAB</li>
-                <li>CNC Machining, 3D Printing</li>
-                <li>FEA, CFD</li>
-            </ul>
+            <p>Hi! I’m Alex, a passionate hiker and outdoor enthusiast. I started this blog to share my experiences, tips, and the beauty of nature with fellow hikers and explorers. My goal is to inspire others to get outside, explore new trails, and appreciate the wonders of the natural world.</p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="blog" class="blog-section">
         <div class="container">
-            <h2>My Projects</h2>
-
-            <div class="project">
-                <h3>Automated Conveyor System</h3>
-                <p>Designed a fully automated conveyor system for a manufacturing plant, increasing productivity by 20%.</p>
-                <p><strong>Tools Used:</strong> SolidWorks, MATLAB</p>
-                <img src="conveyor.jpg" alt="Conveyor System">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <h3>The Best Fall Hikes in the Rockies</h3>
+                <p>Fall is the perfect time to explore the Rockies. Here are some of my favorite hikes during this stunning season.</p>
+                <a href="#">Read More</a>
             </div>
 
-            <div class="project">
-                <h3>Heat Exchanger Design</h3>
-                <p>Designed an efficient heat exchanger to improve thermal efficiency in industrial equipment.</p>
-                <p><strong>Tools Used:</strong> ANSYS, MATLAB</p>
-                <img src="heat-exchanger.jpg" alt="Heat Exchanger Design">
+            <div class="blog-post">
+                <h3>How to Pack for a Weekend Backpacking Trip</h3>
+                <p>Preparing for a weekend backpacking trip? Here’s my packing checklist to ensure you have everything you need.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h3>5 Hidden Gems for Solo Hikers</h3>
+                <p>Looking for a peaceful, less-traveled trail? These hidden gems are perfect for solo adventures.</p>
+                <a href="#">Read More</a>
             </div>
         </div>
     </section>
 
-    <section id="resume">
-        <div class="container">
-            <h2>My Resume</h2>
-            <p><a href="resume.pdf" download>Download My Resume (PDF)</a></p>
-
-            <h3>Experience</h3>
-            <ul>
-                <li>Mechanical Engineer at [Company Name]</li>
-                <li>Product Design Intern at [Company Name]</li>
-            </ul>
-
-            <h3>Education</h3>
-            <ul>
-                <li>B.S. in Mechanical Engineering from [University Name]</li>
-            </ul>
-
-            <h3>Certifications</h3>
-            <ul>
-                <li>Certified SOLIDWORKS Associate (CSWA)</li>
-                <li>Six Sigma Green Belt</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Me</h2>
-            <form action="mailto:contact@johndoe.com" method="post" enctype="text/plain">
+            <p>Have any questions or want to share your favorite trails? Feel free to reach out!</p>
+            <form action="mailto:alex@trailadventures.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
-                
+
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="5" required></textarea><br><br>
-                
+
                 <input type="submit" value="Send Message">
             </form>
         </div>
@@ -110,7 +81,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+            <p>&copy; 2025 Trail Adventures. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
