@@ -1,131 +1,120 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-*
-{   
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
-body
-{
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: linear-gradient(#2f92c0,#b2b9c9);
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
-header
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
-header .logo
-{
-    color:#000000;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+
+header h1 {
+    font-size: 3em;
 }
-header ul
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header ul li
-{
+
+nav ul {
     list-style: none;
-    margin-left: 20px;
+    margin-top: 20px;
 }
-header ul li a
-{
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 6px 15px;
-    color: #000000;
-    font-weight: 700;
-    font-size: 1.2em;
-    border-radius: 20px;
+    font-size: 1.1em;
 }
-header ul li a:hover
-{
-    background: #fff;
-    color: #c2bbab;
+
+section {
+    padding: 50px 0;
 }
-section
-{
-    position:relative;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-section::before
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#2f92c0,transparent);
-    z-index: 1000;
-}
-section img#racetrack
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-section img#Mclaren
-{
-    z-index: 10;
-    position: absolute;
-    top: 150px;
-    left: 1200px;
+
+.container {
     width: 80%;
-    height: 80%;
-    object-fit: scale-down;
-    pointer-events: none;
+    margin: 0 auto;
 }
 
-#text
-{
-    position: absolute;
-    right: -350px;
-    color:#fff;
-    white-space: nowrap;
-    font-size: 6.5vw;
-    z-index: 9;
+h2, h3 {
+    color: #333;
 }
 
-.sec
-{
-    position: relative;
-    padding: 100px;
-    background: #2f92c0;
-}
-.sec h2
-{
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #fff;
-}
-.sec p
-{
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
     font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.project {
+    margin-top: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
     color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
 }
